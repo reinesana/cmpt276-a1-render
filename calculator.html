@@ -1,0 +1,67 @@
+<!-- 
+// Calculator.html
+// Name: Shana Kesia Nursoo
+// Course: CMPT 276 Bobby Chan
+//
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+    
+        <div id="calc-container">
+            <div id="title">
+                <h3>Grade Calculator</h3>
+            </div>
+
+            <div class="objects">
+                <h3>Activities</h3>
+                <p>Give grades to the numeric activities:</p>
+            
+                <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Short Name</th>
+                                <th>Weight</th>
+                                <th>Grade</th>
+                                <th>Percent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Activity 1</td>
+                                <td>A1</td>
+                                <td><input type="text" id="weight1"></td>
+                                <td><input type="text" id="student-score1" oninput="updatePercentage(1)"> / <input type="text" id="total-score1" oninput="updatePercentage(1)"></td>
+                                <td id="percent1"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button onclick="addRow()" id="addRowButton">ADD ROW</button>
+                    
+                    <h3>Result</h3>
+                    
+                    <div id="result"></div>
+                    
+                    <div id="grading-options">
+                        <button onclick="weightedGrade()" id="weighted">WEIGHTED</button>
+                        <button onclick="meanGrade()" id="mean">MEAN</button>
+                    </div>
+
+            </div>
+
+        <script src="calculator.js"></script>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* 
+Calculator.css
+Name: Shana Kesia Nursoo
+Course: CMPT 276 Bobby Chan
+*/
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(144, 26, 26);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 0 3vw 0 3vw;
+    margin: 0 4vw 0 4vw;
+    align-items: left;
+    border-bottom: 2.5vw solid #3d3935;
+    border-top: 1.5vw solid #3d3935;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+#title {
+    text-align: left;
+    margin-top: 5vw;
+}
+
+#title h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+
+.objects {
+    margin: 2vw 2vw 5vw 0vw;
+    padding: 2vw 2vw 2vw 1vw ;
+    background-color: #e9eff1;
+    border-radius: 4px;
+    border: 1px solid #d9e6ea;   
+}
+
+.objects h3 {
+    color: #a31c2b;
+    margin-top: 10px;
+    font-size: 1.4vw;
+}
+
+.objects p {
+    margin: 30px 0 30px 0;
+    font-size: 1.3vw;
+
+    
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#table td {
+    border: 1px solid #cdcccd;
+    padding: 7px 7px 7px 7px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#table th {
+    border: 1px solid #cdcccd;
+    padding: 7px 7px 7px 7px;
+    text-align: left;
+    background-color: #e2e2e2;
+    font-size: 1.2vw;
+}
+
+
+input[type="text"] {
+    width: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+#addRowButton {
+    margin: 0vw 0 0.7vw 0;
+    font-size: 1vw;
+
+}
+
+#weighted {
+    padding:10px 6px 10px 6px;
+    margin: 10px 10px 0 0;
+    border: none;
+    background-color: #b91d22;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+#mean {
+    padding: 10px 25px;
+    margin: 10px 10px 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #b91d22;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#grading-options {
+    display: flex;
+    justify-content: flex-end;  
+}
+
+#result {
+    margin-top: 1vw;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
